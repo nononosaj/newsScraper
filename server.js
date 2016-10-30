@@ -12,10 +12,9 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'));
 
-
-
 //Database configuration
-mongoose.connect('mongodb://localhost/mongoosescraper');
+mongoose.connect("mongodb://heroku_89mvq291:ttfrajtlhp2ma7vdhi2ae0h6tt@ds139267.mlab.com:39267/heroku_89mvq291");
+
 var db = mongoose.connection;
 
 db.on('error', function (err) {
